@@ -60,7 +60,7 @@ const UserProfile = () => {
     const token = localStorage.getItem('jwtToken'); // Retrieve JWT token
 
     try {
-      const response = await fetch('http://localhost:8080/api/user/profile', {
+      const response = await fetch('https://worldwalkerbackend-a8d48ad74b49.herokuapp.com/api/user/profile', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
