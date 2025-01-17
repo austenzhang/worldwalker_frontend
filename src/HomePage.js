@@ -237,7 +237,7 @@ const HomePage = () => {
     const token = localStorage.getItem('jwtToken'); // Retrieve the token from localStorage
   
     try {
-      const response = await fetch('http://localhost:8080/api/llm', {
+      const response = await fetch('https://worldwalkerbackend-a8d48ad74b49.herokuapp.com/api/llm', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
